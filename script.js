@@ -62,20 +62,45 @@
     try { await navigator.clipboard.writeText($('#mailtxt').textContent); $('#copy').textContent = '✓'; setTimeout(() => $('#copy').textContent = '⧉', 1500); } catch { }
   };
 
-  // Contact form -> your email via FormSubmit
-  $('#form').addEventListener('submit', async e => {
-    e.preventDefault();
-    const f = e.target, st = $('#status'), b = $('#send');
-    b.disabled = true; b.textContent = 'Sending…'; st.className = ''; st.textContent = '';
-    try {
-      const r = await fetch(f.action, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) });
-      const d = await r.json();
-      if (r.ok && (d.success === 'true' || d.success === true)) { st.className = 'ok-t'; st.textContent = 'Message sent. I’ll reply soon!'; f.reset(); }
-      else throw new Error(d.message || 'failed');
-    } catch { st.className = 'err-t'; st.textContent = 'Could not send. Please email me directly at unmeshkulkarni205@gmail.com.'; }
-    b.disabled = false; b.textContent = 'Send message';
-  });
+  // Contact form -> EmailJS
+emailjs.init({
+  publicKey: "5SFJuBlZhbbFLymYF"
+});
 
+$('#form').addEventListener('submit', async e => {
+  e.preventDefault();
+
+  const form = e.target;
+  const status = $('#status');
+  const button = $('#send');
+
+  button.disabled = true;
+  button.textContent = 'Sending…';
+  status.className = '';
+  status.textContent = '';
+
+  try {
+    await emailjs.sendForm(
+      'service_50g2jbg',
+      'template_byn02xc',
+      form
+    );
+
+    status.className = 'ok-t';
+    status.textContent = 'Message sent successfully! I’ll reply soon.';
+    form.reset();
+
+  } catch (error) {
+    console.error('EmailJS error:', error);
+
+    status.className = 'err-t';
+    status.textContent =
+      'Could not send the message. Please email me directly at unmeshkulkarni205@gmail.com.';
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Send message';
+  }
+});
   // ===== Game: Squash the bugs =====
   const arena = $('#arena'), msg = $('#msg'), sc = $('#score'), tm = $('#time'), bs = $('#best');
   let score = 0, time = 30, run = false, spawnT, clockT, best = +localStorage.getItem('bugBest') || 0;
