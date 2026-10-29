@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unmesh Kulkarni — Software Developer Portfolio</title>
+<meta name="description" content="Portfolio of Unmesh Prashant Kulkarni, final-year E&TC engineering student at PICT, Pune. Full-stack and backend developer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%232f4bd6%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22 font-weight=%22700%22>UK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<div id="glow"></div>
+
+<header class="nav">
+  <a href="#top" class="logo"><span class="logo-mark">UK</span> Unmesh Kulkarni</a>
+  <nav id="links">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#learning">Learning</a><a href="#play">Play</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button id="theme" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+    <a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GH</a>
+    <a href="https://www.linkedin.com/in/unmesh-kulkarni31/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+    <a href="https://leetcode.com/u/Unmesh_Kulkarni/" target="_blank" rel="noopener" aria-label="LeetCode" title="LeetCode">LC</a>
+    <button id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero wrap">
+  <p class="tag"><i class="dot"></i> Portfolio — 2026 · Open to internships &amp; full-time roles</p>
+  <h1>Turning ideas into<br>software that<br><span class="accent">actually ships.</span></h1>
+  <p class="lead">I'm Unmesh Kulkarni, a final-year engineering student at PICT, Pune. I build full-stack apps, backend systems and data pipelines, and I care about the unglamorous parts too: tests, security and clean schemas.</p>
+  <p class="typing"><span class="mono">$</span> <span id="type"></span><span class="caret"></span></p>
+  <div class="cta">
+    <a class="btn dark" href="#work">Explore my work ↓</a>
+    <a class="btn ghost" href="#contact">Get in touch ↗</a>
+    <a class="link" href="assets/Unmesh_Resume.pdf" target="_blank" rel="noopener">▤ View résumé</a>
+  </div>
+  <div class="meta"><span>⌖ Pune, India</span><span>◉ Final-year engineering student</span></div>
+</section>
+
+<div class="marquee"><div class="track">
+  <span>Full-stack development</span><span>Backend engineering</span><span>REST APIs</span><span>Database design</span><span>Problem solving</span><span>Web applications</span><span>Data analytics</span><span>Automation</span>
+  <span>Full-stack development</span><span>Backend engineering</span><span>REST APIs</span><span>Database design</span><span>Problem solving</span><span>Web applications</span><span>Data analytics</span><span>Automation</span>
+</div></div>
+
+<!-- WORK -->
+<section id="work" class="wrap section">
+  <p class="label">01 — Featured work</p>
+  <h2>Projects.</h2>
+
+  <article class="project">
+    <div class="p-text">
+      <p class="label blue">(01) — Uptime monitoring platform</p>
+      <h3>PulseSentinel</h3>
+      <p>A full-stack uptime monitoring platform that tracks website availability and shows monitor status, response times, uptime percentages and incident history in a React dashboard.</p>
+      <div class="chips"><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>React</span><span>REST APIs</span></div>
+      <ul class="feat">
+        <li>Background scheduler for HTTP/HTTPS checks at per-monitor intervals, with no overlapping jobs</li>
+        <li>Incidents open on healthy-to-unhealthy transitions and resolve automatically on recovery</li>
+        <li>SSRF protection through DNS resolution and private/loopback IP validation</li>
+        <li>Redirect and timeout controls, parameterized SQL and input validation</li>
+        <li>Automated tests for URL validation, checks and incident logic</li>
+      </ul>
+      <div class="links"><a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener">View code ↗</a><!-- TODO: replace with the PulseSentinel repo URL --></div>
+    </div>
+    <div class="p-visual tilt">
+      <div class="mock dark-mock">
+        <div class="bar"><i></i><i></i><i></i><span>pulsesentinel / dashboard</span><b class="up">● 3 up · 1 down</b></div>
+        <div class="mon-grid">
+          <ul class="mons">
+            <li><i class="g"></i>example.com<em>182ms</em><b>99.98%</b></li>
+            <li><i class="g"></i>api.example.com<em>215ms</em><b>99.91%</b></li>
+            <li><i class="r"></i>docs.example.com<em>—</em><b class="rd">98.42%</b></li>
+            <li><i class="g"></i>status.example.com<em>164ms</em><b>100.0%</b></li>
+          </ul>
+          <div class="resp"><small>Response time · 24h</small><strong>186<span>ms avg</span></strong>
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none"><polyline class="draw" points="0,28 10,24 20,27 30,20 40,23 50,16 60,21 70,14 80,19 90,12 100,17 120,10" fill="none" stroke="#4ade80" stroke-width="1.6"/></svg></div>
+        </div>
+        <div class="inc"><small>Incident history</small><p><span>docs.example.com unreachable</span><b class="rd">Open</b></p><p><span>api.example.com slow response</span><b>Resolved 2h ago</b></p></div>
+      </div>
+      <p class="cap">Illustrative interface preview · sample data</p>
+    </div>
+  </article>
+
+  <article class="project flip">
+    <div class="p-text">
+      <p class="label blue">(02) — URL shortener with analytics</p>
+      <h3>ShortLink</h3>
+      <p>A URL shortener REST API that turns long links into compact Base62 codes, redirects visitors to the original URL and records click activity for each link.</p>
+      <div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>REST APIs</span><span>Pytest</span></div>
+      <ul class="feat">
+        <li>URL validation and unique Base62 short codes</li>
+        <li>PostgreSQL schema with foreign keys and indexes</li>
+        <li>Click logging with timestamps and referrers</li>
+        <li>Analytics endpoints for total and daily clicks</li>
+        <li>JWT authentication so users manage only their own links</li>
+        <li>Unit and API tests with Pytest, containerized with Docker</li>
+      </ul>
+      <div class="links"><a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener">View code ↗</a><!-- TODO: replace with the ShortLink repo URL --></div>
+    </div>
+    <div class="p-visual tilt">
+      <div class="mock light-mock">
+        <div class="bar"><i></i><i></i><i></i><span>shortlink / analytics</span></div>
+        <ul class="urls"><li><code>sho.rt/xK3d9q</code><span>1,284 clicks</span></li><li><code>sho.rt/aB72Lp</code><span>862 clicks</span></li><li><code>sho.rt/qR61zA</code><span>437 clicks</span></li></ul>
+        <div class="bars"><i style="--h:30%"></i><i style="--h:45%"></i><i style="--h:38%"></i><i style="--h:60%"></i><i style="--h:50%"></i><i style="--h:72%"></i><i style="--h:58%"></i><i style="--h:80%"></i><i style="--h:66%"></i><i style="--h:90%"></i><i style="--h:76%"></i><i style="--h:100%"></i></div>
+        <small class="tot">Clicks · last 12 days</small>
+      </div>
+      <p class="cap">Illustrative interface preview · sample data</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="p-text">
+      <p class="label blue">(03) — E-commerce price tracker</p>
+      <h3>DealDrop</h3>
+      <p>An e-commerce price-tracking app that monitors product prices, records historical trends and sends notifications when prices cross user-defined thresholds.</p>
+      <div class="chips"><span>Next.js</span><span>Node.js</span><span>Web Scraping</span><span>Vercel</span><span>AWS</span></div>
+      <ul class="feat">
+        <li>Scraping pipeline across multiple e-commerce platforms</li>
+        <li>Historical price logging and trend processing</li>
+        <li>User-defined price thresholds</li>
+        <li>Asynchronous price-drop notifications</li>
+        <li>Automated scheduling of price checks</li>
+        <li>Deployed on Vercel / AWS</li>
+      </ul>
+      <div class="links"><a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener">View code ↗</a><!-- TODO: add DealDrop repo URL --><a href="#" target="_blank" rel="noopener">Visit live site ↗</a><!-- TODO: add DealDrop live URL --></div>
+    </div>
+    <div class="p-visual tilt">
+      <div class="mock light-mock">
+        <div class="bar"><i></i><i></i><i></i><span>dealdrop / watchlist</span><b class="pill">Alert armed</b></div>
+        <div class="deal"><div class="thumb">Aa</div><div><strong>Wireless Headphones</strong><small>Target: ₹4,500</small></div><div class="price">₹4,199<small>▼ 12%</small></div></div>
+        <small>Price history · 30 days</small>
+        <svg viewBox="0 0 200 60" class="spark"><polyline class="draw" points="0,12 20,14 40,10 60,22 80,20 100,30 120,28 140,38 160,34 180,44 200,48" fill="none" stroke="#2f4bd6" stroke-width="2"/><circle cx="200" cy="48" r="3.5" fill="#2f4bd6"/></svg>
+      </div>
+      <p class="cap">Illustrative interface preview · sample data</p>
+    </div>
+  </article>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="band">
+  <div class="wrap section">
+    <p class="label">02 — About</p>
+    <h2>A little about me.</h2>
+    <div class="about-grid">
+      <div>
+        <p>I'm Unmesh Prashant Kulkarni, a final-year Electronics and Telecommunication Engineering student at Pune Institute of Computer Technology (PICT). I build software that combines practical problem-solving with solid engineering fundamentals.</p>
+        <p>My work spans React front ends, Node.js and FastAPI back ends, relational databases and data automation. Along the way I've learned to treat security, testing and maintainability as part of the feature rather than an afterthought.</p>
+        <p>Outside code, I coordinate AI/ML student teams, take part in AWS Cloud Club workshops and help run campus events.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Pune, Maharashtra, India</dd></div>
+        <div><dt>Studying</dt><dd>B.E. Electronics &amp; Telecommunication, PICT (2023 – 2027)</dd></div>
+        <div><dt>Focus</dt><dd>Full-stack, backend, data</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:unmeshkulkarni205@gmail.com">unmeshkulkarni205@gmail.com</a></dd></div>
+      </dl>
+    </div>
+    <div class="stats">
+      <div><strong data-n="3">0</strong><span>Projects shipped</span></div>
+      <div><strong data-n="2">0</strong><span>Internships</span></div>
+      <div><strong data-n="3">0</strong><span>Certifications</span></div>
+      <div><strong data-n="232" data-suffix="h">0</strong><span>Course hours logged</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="wrap section">
+  <p class="label">03 — Experience</p>
+  <h2>Where I've worked.</h2>
+  <div class="timeline">
+    <div class="job">
+      <p class="date">Dec 2025 — Mar 2026</p>
+      <h3>Data Analytics Intern</h3>
+      <p class="org">Technosys Consulting Pvt. Ltd. · Pune, Maharashtra</p>
+      <ul>
+        <li>Processed and structured complex datasets using Python, Pandas and NumPy, and optimized SQL/PostgreSQL queries, migrating unstructured data into high-performance relational databases and automating reporting workflows.</li>
+        <li>Developed Python automation scripts and lightweight REST API endpoints for backend data pipeline integration, reducing manual processing and streamlining internal workflows.</li>
+        <li>Designed dynamic dashboards using Power BI and Advanced Excel to analyze operational trends and support data-driven decisions for client-facing enterprise software integrations.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <p class="date">Sep 2025 — Nov 2025</p>
+      <h3>Full Stack Developer Intern</h3>
+      <p class="org">IEC Chhatrapati Sambhajinagar · Chhatrapati Sambhajinagar, Maharashtra</p>
+      <ul>
+        <li>Architected and developed a responsive full-stack web application using ReactJS, Node.js, Bootstrap and MySQL, covering frontend, backend, deployment and production maintenance.</li>
+        <li>Implemented secure lead-capture functionality and an admin content management system using REST APIs, input validation and access-control practices for student and university inquiries.</li>
+        <li>Used Claude and Cursor AI for code auditing, refactoring and basic security validation while supporting continuous feature development and platform improvements.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="band">
+  <div class="wrap section">
+    <p class="label">04 — Skills</p>
+    <h2>What I work with.</h2>
+    <p class="sub-lead">Filter by area, then click any skill to see where I've used it.</p>
+    <div class="sk-tabs" id="skTabs" role="tablist"></div>
+    <div class="sk-grid" id="skGrid"></div>
+    <div class="sk-detail" id="skDetail" aria-live="polite">
+      <small>Selected skill</small>
+      <h3 id="skName">Pick a skill</h3>
+      <p id="skUse">Click any skill above to see the projects and work where I've used it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING -->
+<section id="learning" class="wrap section">
+  <p class="label">05 — Education &amp; activities</p>
+  <h2>Learning, in and out of class.</h2>
+
+  <div class="edu">
+    <p class="date">2023 — 2027</p>
+    <h3>Pune Institute of Computer Technology (PICT)</h3>
+    <p class="org">Bachelor of Engineering (B.E.) — Electronics and Telecommunication Engineering · Pune, Maharashtra</p>
+  </div>
+
+  <h4 class="sub">Certifications <small>Udemy · click a card to verify</small></h4>
+  <div class="certs">
+    <a class="cert" href="https://ude.my/UC-4270fe8a-a38e-4efa-b976-19eff827dca2" target="_blank" rel="noopener">
+      <small>Hitesh Choudhary</small><h5>Complete Web Development Course</h5>
+      <p>100 hours · July 25, 2026</p><code>UC-4270fe8a-a38e-4efa-b976-19eff827dca2</code></a>
+    <a class="cert" href="https://ude.my/UC-9a07e881-f145-4968-a23e-e589ea813326" target="_blank" rel="noopener">
+      <small>Dr. Angela Yu</small><h5>100 Days of Code: The Complete Python Pro Bootcamp</h5>
+      <p>56.5 hours · Sept 5, 2025</p><code>UC-9a07e881-f145-4968-a23e-e589ea813326</code></a>
+    <a class="cert" href="https://ude.my/UC-0b1ab93c-93f1-4711-b014-f30ee64c7dfc" target="_blank" rel="noopener">
+      <small>Abdul Bari</small><h5>Mastering Data Structures &amp; Algorithms using C and C++</h5>
+      <p>76 hours · Aug 10, 2025</p><code>UC-0b1ab93c-93f1-4711-b014-f30ee64c7dfc</code></a>
+  </div>
+
+  <h4 class="sub">Achievements &amp; activities</h4>
+  <ul class="ach">
+    <li><strong>INC Domain Coordinator, AI/ML</strong>Coordinated student teams and engineering architecture reviews for machine learning projects.</li>
+    <li><strong>AWS Cloud Club Member</strong>Participated in cloud architecture workshops covering databases, serverless computing and web application security.</li>
+    <li><strong>PICT Addiction Cultural Festival</strong>Managed logistical workflows for 200+ participants.</li>
+  </ul>
+</section>
+
+<!-- GAME -->
+<section id="play" class="band">
+  <div class="wrap section">
+    <p class="label">06 — Take a break</p>
+    <h2>Squash the bugs.</h2>
+    <p class="sub-lead">Every developer's favorite sport. Click the bugs before they reach production. You get 30 seconds; the green "feature" blobs are not bugs, so leave them alone.</p>
+    <div class="game">
+      <div class="hud"><span>Score <b id="score">0</b></span><span>Time <b id="time">30</b>s</span><span>Best <b id="best">0</b></span><button class="btn dark" id="start">Start game</button></div>
+      <div id="arena" aria-label="Bug squashing game area"><p id="msg">Press “Start game” to deploy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap section">
+    <p class="label light">07 — Contact</p>
+    <h2>Have something interesting in mind?</h2>
+    <p class="sub-lead light">I'm interested in building useful software, solving challenging problems and connecting with people who enjoy creating things through technology. Send a message and it lands straight in my inbox.</p>
+    <div class="contact-grid">
+      <div>
+        <p class="mail"><a href="mailto:unmeshkulkarni205@gmail.com" id="mailtxt">unmeshkulkarni205@gmail.com</a> <button id="copy" aria-label="Copy email">⧉</button></p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/unmesh-kulkarni31/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://leetcode.com/u/Unmesh_Kulkarni/" target="_blank" rel="noopener">LeetCode ↗</a></li>
+          <li><a href="assets/Unmesh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a></li>
+        </ul>
+      </div>
+      <form id="form" action="https://formsubmit.co/ajax/unmeshkulkarni205@gmail.com" method="POST">
+        <h3>Let's connect</h3>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="New message from your portfolio">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <label>Your name<input name="name" required placeholder="Jane Doe"></label>
+        <label>Your email<input name="email" type="email" required placeholder="jane@company.com"></label>
+        <label>Message<textarea name="message" rows="4" required placeholder="Tell me about the role, project or idea…"></textarea></label>
+        <button class="btn light" type="submit" id="send">Send message</button>
+        <p id="status" role="status"></p>
+      </form>
+    </div>
+  </div>
+<footer class="wrap site-foot">
+  <div class="sf-top">
+    <div class="sf-brand">
+      <a href="#top" class="logo"><span class="logo-mark">UK</span> Unmesh Kulkarni</a>
+      <p>Full-stack and backend developer building reliable software from Pune, India.</p>
+      <p class="sf-status"><i class="dot"></i> Open to opportunities · <span id="puneTime">--:--</span> in Pune</p>
+    </div>
+    <nav class="sf-col" aria-label="Footer navigation">
+      <h6>Explore</h6>
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#learning">Learning</a>
+    </nav>
+    <div class="sf-col">
+      <h6>Find me</h6>
+      <a href="https://github.com/Unmeshkulkarni31" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/unmesh-kulkarni31/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://leetcode.com/u/Unmesh_Kulkarni/" target="_blank" rel="noopener">LeetCode ↗</a>
+      <a href="assets/Unmesh_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+  </div>
+  <div class="sf-bottom">
+    <span>© <span id="yr"></span> Unmesh Prashant Kulkarni. All rights reserved.</span>
+    <a href="#top" class="sf-up">Back to top ↑</a>
+  </div>
+</footer>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
